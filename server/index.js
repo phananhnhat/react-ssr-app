@@ -10,7 +10,7 @@ import App from '../src/App';
 const PORT = process.env.PORT || 3006;
 const app = express();
 
-// Source: https://viblo.asia/p/xay-dung-server-side-rendering-trong-react-theo-phong-cach-cua-toi-eW65GmExZDO
+// Source: https://viblo.asia/p/xay-dung-server-side-rendering-trong-react-theo-phong-cach-cua-toi-eW65GmExZDO => Ko phải
 
 app.get('/', (req, res) => {
   const app = ReactDOMServer.renderToString(<App />);
