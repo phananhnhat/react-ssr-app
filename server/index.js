@@ -10,7 +10,7 @@ import App from '../src/App';
 const PORT = process.env.PORT || 3006;
 const app = express();
 
-// Source: npx create-react-app react-ssr-example
+// Source: https://www.digitalocean.com/community/tutorials/react-server-side-rendering
 
 app.get('/', (req, res) => {
   const app = ReactDOMServer.renderToString(<App />);
