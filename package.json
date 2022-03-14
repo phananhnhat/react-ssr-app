@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.12.3",
+    "@loadable/babel-plugin": "^5.13.2",
+    "@loadable/component": "^5.15.2",
+    "@loadable/server": "^5.15.2",
+    "@loadable/webpack-plugin": "^5.15.2",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
     "@svgr/webpack": "5.5.0",
     "@testing-library/jest-dom": "^5.11.4",
@@ -69,12 +73,12 @@
     "workbox-webpack-plugin": "5.1.4"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js",
-    "dev:build-server": "NODE_ENV=development webpack --config webpack.server.js --mode=development -w",
-    "dev:start": "nodemon ./server-build/index.js",
-    "dev": "npm-run-all --parallel build dev:*"
+    "start-csr": "node scripts/start.js",
+    "build-csr": "node scripts/build.js",
+    "test-csr": "node scripts/test.js",
+    "dev:build-server-ssr": "NODE_ENV=development webpack --config webpack.server.js --mode=development -w",
+    "dev:start-ssr": "nodemon ./ssr-build/index.js",
+    "dev-ssr": "npm-run-all --parallel build-csr dev:*"
   },
   "eslintConfig": {
     "extends": [
