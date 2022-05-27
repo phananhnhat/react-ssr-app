@@ -1,9 +1,9 @@
 import React from 'react';
 import {useEffect, useState}  from 'react';
+import Count from './Count';
 
 function Home(props) {
   const [count, setCount] = useState(0);
-  console.log(123);
 
   useEffect(() => {
     console.log('useEffect')
@@ -19,6 +19,8 @@ function Home(props) {
       <h1>Hello {props.name}!</h1>
       <h1>Count: {count}</h1>
       <button onClick={onClick}>Click!</button>
+
+      <Count />
     </div>
   );
 }

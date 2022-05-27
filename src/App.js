@@ -1,9 +1,9 @@
 import React from 'react';
-import loadable from '@loadable/component'
+// import loadable from '@loadable/component'
 
 import Home from './components/Home';
 // import Header from './components/Header';
-const Header = loadable(() => import('./components/Header'))
+// const Header = loadable(() => import('./components/Header'))
 
 // loadable hiện chỉ chạy trên client
 // loadable chạy trên server, CHƯA RÕ mục đích để làm gì ?
@@ -17,7 +17,7 @@ function App() {
     <div>
       <h1>This is App</h1>
       <h2>Đây là App123456</h2>
-      <Header />
+      {/*<Header />*/}
       <Home name="Sammy"/>
     </div>
   );
