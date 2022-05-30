@@ -1,8 +1,0 @@
-{
-  "presets": [
-    "react-app"
-  ],
-  // Khi dùng split code SSR với loadable, các file js sẽ được giữ tên thành components-Header.chunk.js
-  // Còn nếu dùng với CSR thì sẽ ko có config này, tên file js sẽ bị biến đổi thành 0.chunk.js
-  "plugins": ["@loadable/babel-plugin"]
-}
